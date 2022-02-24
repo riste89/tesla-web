@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#" id="models">Model S</a></li>
+                <li><a href="#" id="model3">Model 3</a></li>
+                <li><a href="#" id="modely">Model Y</a></li>
+                <li><a href="#" id="modelx">Model X</a></li>
+            </ul>
+            <a href="" class="btn">Reserve Now</a>
+        </nav>
+
+        <div class="info">
+            <div>
+                <h2 >1.9s</h2>
+                <p>60 mph</p>
+            </div>
+            <div>
+                <h2 id="speed">200 mph</h2>
+                <p>Top Speed</p>
+            </div>
+            <div>
+                <h2 id="mi">396 mi</h2>
+                <p>Max Range</p>
+            </div>
+            <div class="line"></div>
+            <div ><h2 id="model">Model S</h2></div>
+        </div>
+
+
+    </div>
+
+    <script>
+        var header = document.getElementById('header')
+        var ms = document.getElementById('models')
+        var m3 = document.getElementById('model3')
+        var my = document.getElementById('modely')
+        var mx = document.getElementById('modelx')
+
+        var model = document.getElementById('model')
+        var speed = document.getElementById('speed')
+        var mi = document.getElementById('mi')
+
+
+        ms.onclick = function(){
+            header.style.backgroundImage = "url(images/image-1.png)"
+            model.innerHTML = 'Model S'
+            speed.innerHTML = '200 mh'
+            mi.innerHTML = '396 mi'
+        }
+        m3.onclick = function(){
+            header.style.backgroundImage = "url(images/image-2.png)"
+            model.innerHTML = 'Model 3'
+            speed.innerHTML = '220 mh'
+            mi.innerHTML = '388 mi'
+        }
+        my.onclick = function(){
+            header.style.backgroundImage = "url(images/image-3.png)"
+            model.innerHTML = 'Model Y'
+            mi.innerHTML = '415 mi'
+            speed.innerHTML = '250 mh'
+        }
+        mx.onclick = function(){
+            header.style.backgroundImage = "url(images/image-4.png)"
+            model.innerHTML = 'Model X'
+            mi.innerHTML = '440 mi'
+            speed.innerHTML = '195 mh'
+        }
+        // header = function(){
+        //     onclick.style.background = url(images/image-1.png);
+        // }
+    </script>
+</body>
+</html>
